@@ -342,10 +342,6 @@ a {
   color: var(--accent-color);
 }
 
-.footer-adress {
-  margin-top: 20px;
-}
-
 .adress-city {
   font-weight: normal;
   font-size: 14px;
