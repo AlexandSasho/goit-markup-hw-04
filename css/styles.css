@@ -124,8 +124,15 @@ a {
   color: var(--accent-color);
 }
 
+.header-contacts-icon {
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+}
+
 .header-link-adress {
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -156,6 +163,21 @@ a {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--title-back-color);
+  max-width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Imgbutton.jpg);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
 }
 
@@ -193,6 +215,22 @@ a {
 .about {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.about-div-icon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.about-div-icon:hover,
+.about-div-icon:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 }
 
 .about-h3 {
@@ -296,7 +334,40 @@ a {
   letter-spacing: 0.03em;
   color: var(--header-link-color);
   text-align: center;
+  margin-bottom: 16px;
 }
+
+.masters-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.masters-social-link {
+  width: 44px;
+  height: 44px;
+  overflow-x: 247px;
+  overflow-y: 2139px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+.masters-social-icon {
+  fill: currentColor;
+}
+
+.masters-social-link:hover,
+.masters-social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--btn-color);
+}
+
+.masters-social-item + .masters-social-item {
+  margin-left: 10px;
+}
+
 .team-list {
   display: flex;
   flex-wrap: nowrap;
@@ -310,6 +381,46 @@ a {
   margin-bottom: 10px;
   text-align: center;
 }
+/* clients */
+.clients-list {
+  display: flex;
+}
+.clients-div {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-h3 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--text-color);
+  font-size: 36px;
+  line-height: calc(42 / 36);
+}
+
+.clients-item-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.clients-item-icon {
+  fill: currentColor;
+}
+.clients-item-link:hover,
+.clients-item-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
 /* footer */
 
 .adress-list-foot {
@@ -340,6 +451,7 @@ a {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-right: 156px;
 }
 
 .adress-city {
@@ -366,6 +478,48 @@ a {
 .foot-adress-contact:nth-last-child(1n + 2) {
   margin-bottom: 9px;
 }
+
+.footer-socials-p {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.icon-footer {
+  display: flex;
+}
+
+.icon-footer-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  justify-content: center;
+}
+
+.icon-social-footer {
+  fill: currentColor;
+}
+
+.icon-footer-link:hover,
+.icon-footer-link:focus {
+  background-color: var(--accent-color);
+}
+
+.icon-footer-item + .icon-footer-item {
+  margin-left: 10px;
+}
+
 /* portfolio */
 
 /* header portfolio */
@@ -407,6 +561,7 @@ a {
 
 .portfolio-contact {
   display: flex;
+  margin-left: auto;
 }
 
 .portfolio-header-adress + .portfolio-header-adress {
@@ -416,7 +571,6 @@ a {
 .portfolio-header-adress {
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-left: 331px;
 }
 
 .header-link-portfolio:hover,
@@ -468,6 +622,15 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
+
+.services-item:hover,
+.services-item:focus {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .services .services-item {
   width: 370px;
 
