@@ -133,6 +133,7 @@ a {
 
 .header-link-adress {
   display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -451,7 +452,10 @@ a {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-right: 156px;
+}
+
+.adress-list-div {
+  margin-right: 70px;
 }
 
 .adress-city {
@@ -623,10 +627,12 @@ a {
   flex-wrap: wrap;
 }
 
-.services-item:hover,
-.services-item:focus {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+.services-list-link {
+  display: block;
+}
+
+.services-list-link:hover,
+.services-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
